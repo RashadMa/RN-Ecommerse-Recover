@@ -9,6 +9,8 @@ import { FlatList } from 'react-native-gesture-handler';
 const Wishlist = ({ navigation }: any) => {
   const [items, setItems] = useState<any>([]);
 
+  // AsyncStorage.clear()
+
   useFocusEffect(() => {
     AsyncStorage.getItem('wishlist')
       .then(data => {

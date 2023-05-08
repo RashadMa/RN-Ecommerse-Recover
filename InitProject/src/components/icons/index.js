@@ -4,6 +4,7 @@ export {default as Delete} from './Delete';
 export {default as Heart} from './Heart';
 export {default as Home} from './Home';
 export {default as Location} from './Location';
+export {default as Notification} from './Notification';
 export {default as Path33961} from './Path33961';
 export {default as Profile} from './Profile';
 export {default as Search} from './Search';

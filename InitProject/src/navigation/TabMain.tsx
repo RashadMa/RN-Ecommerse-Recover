@@ -23,12 +23,14 @@ const TabMain = () => {
                               name='home'
                               component={ProductStack}
                               options={{
+                                    tabBarShowLabel: false,
                                     headerShown: false,
                                     tabBarIcon: ({ focused }) => (
                                           <SvgHome
                                                 name="person"
                                                 size={32}
                                                 fill={focused ? '#5956E9' : 'white'}
+                                                stroke={focused ? '#5956E9' : '#200E32'}
                                           />
                                     )
                               }}
@@ -37,27 +39,38 @@ const TabMain = () => {
                               name='wishlist'
                               component={Wishlist}
                               options={{
+                                    tabBarShowLabel: false,
+
                                     headerShown: false,
                                     tabBarIcon: ({ focused }) => (
-                                          <SvgHeart name="person" size={32} fill={focused ? '#5956E9' : 'white'} />
+                                          <SvgHeart
+                                                name="person"
+                                                size={32}
+                                                fill={focused ? '#5956E9' : 'white'}
+                                                stroke={focused ? '#5956E9' : '#200E32'}
+                                          />
                                     )
                               }} />
                         <Tab.Screen
                               name='profile'
                               component={Profile}
                               options={{
+                                    tabBarShowLabel: false,
+
                                     headerShown: false,
                                     tabBarIcon: ({ focused }) => (
-                                          <SvgProfile name="person" size={32} fill={focused ? '#5956E9' : 'white'} />
+                                          <SvgProfile name="person" stroke={focused ? '#5956E9' : '#200E32'} size={32} fill={focused ? '#5956E9' : 'white'} />
                                     )
                               }} />
                         <Tab.Screen
                               name='basket'
                               component={Basket}
                               options={{
+                                    tabBarShowLabel: false,
+
                                     headerShown: false,
                                     tabBarIcon: ({ focused }) => (
-                                          <SvgBuy name="person" size={32} fill={focused ? '#5956E9' : 'white'} />
+                                          <SvgBuy name="person" stroke={focused ? '#5956E9' : '#200E32'} size={32} fill={focused ? '#5956E9' : 'white'} />
                                     )
                               }} />
 

@@ -9,7 +9,7 @@ const SvgBuy = props => (
     viewBox="0 0 20 21"
     {...props}>
     <Path
-      stroke="#200E32"
+      // stroke="#200E32"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.5}
@@ -17,7 +17,7 @@ const SvgBuy = props => (
       clipRule="evenodd"
     />
     <Path
-      stroke="#200E32"
+      // stroke="#200E32"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.5}
